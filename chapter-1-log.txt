@@ -1,0 +1,28 @@
+Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
+Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
+Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
+DevTools failed to load source map: Could not load content for https://www.google.com/chrome.css.map: HTTP error: status code 404, net::ERR_HTTP_RESPONSE_CODE_FAILURE
+DevTools failed to load source map: Could not load content for https://www.google.com/_/mss/boq-one-google/_/ss/k=boq-one-google.OneGoogleWidgetUi.bFYcbJ5k0Tw.L.W.O/am=CGHIGw/d=1/ed=1/rs=AM-SdHty-QPU6SOWoO7ufFkvX7iw1auVdw/chrome.css.map: HTTP error: status code 404, net::ERR_HTTP_RESPONSE_CODE_FAILURE
+console.log(eval("3+5"));
+VM313:1 8
+undefined
+(function () {
+  "use strict";
+  /* Start of your code */
+  function greetMe(yourName) {
+    alert(`Hello ${yourName}`);
+  }
+
+  greetMe("World");
+VM458:8 Uncaught SyntaxError: Unexpected end of input
+(function () {
+  "use strict";
+  /* Start of your code */
+  function greetMe(yourName) {
+    alert(`Hello ${yourName}`);
+  }
+
+  greetMe("World");
+
+ })();
+undefined
