@@ -1,0 +1,82 @@
+Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
+googleads.g.doubleclick.net/pagead/id:1     Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
+ad_status.js:1     Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
+DevTools failed to load source map: Could not load content for https://www.google.com/chrome.css.map: HTTP error: status code 404, net::ERR_HTTP_RESPONSE_CODE_FAILURE
+Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
+Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
+DevTools failed to load source map: Could not load content for https://www.google.com/_/mss/boq-one-google/_/ss/k=boq-one-google.OneGoogleWidgetUi.bFYcbJ5k0Tw.L.W.O/am=CGHIGw/d=1/ed=1/rs=AM-SdHty-QPU6SOWoO7ufFkvX7iw1auVdw/chrome.css.map: HTTP error: status code 404, net::ERR_HTTP_RESPONSE_CODE_FAILURE
+www-embed-player.js:912     GET https://googleads.g.doubleclick.net/pagead/id net::ERR_BLOCKED_BY_CLIENT
+Pl @ www-embed-player.js:912
+Ml @ www-embed-player.js:897
+(anonymous) @ www-embed-player.js:1481
+Vd @ www-embed-player.js:320
+vt @ www-embed-player.js:1478
+(anonymous) @ www-embed-player.js:1501
+(anonymous) @ www-embed-player.js:867
+www-embed-player.js:912     GET https://googleads.g.doubleclick.net/pagead/id net::ERR_BLOCKED_BY_CLIENT
+Pl @ www-embed-player.js:912
+Ml @ www-embed-player.js:897
+(anonymous) @ www-embed-player.js:1481
+Vd @ www-embed-player.js:320
+vt @ www-embed-player.js:1478
+(anonymous) @ www-embed-player.js:1501
+(anonymous) @ www-embed-player.js:867
+setTimeout (async)
+Fl @ www-embed-player.js:890
+Mt @ www-embed-player.js:1501
+Lt @ www-embed-player.js:1500
+(anonymous) @ www-embed-player.js:1501
+e.h @ www-embed-player.js:332
+je @ www-embed-player.js:344
+ee @ www-embed-player.js:343
+m.Xd @ www-embed-player.js:342
+Ud @ www-embed-player.js:319
+Promise.then (async)
+Pd @ www-embed-player.js:317
+Sd @ www-embed-player.js:316
+ge @ www-embed-player.js:340
+Wd @ www-embed-player.js:336
+(anonymous) @ www-embed-player.js:320
+a.onError @ www-embed-player.js:1479
+(anonymous) @ www-embed-player.js:897
+(anonymous) @ www-embed-player.js:867
+k @ www-embed-player.js:910
+XMLHttpRequest.send (async)
+Pl @ www-embed-player.js:912
+Ml @ www-embed-player.js:897
+(anonymous) @ www-embed-player.js:1481
+Vd @ www-embed-player.js:320
+vt @ www-embed-player.js:1478
+(anonymous) @ www-embed-player.js:1501
+(anonymous) @ www-embed-player.js:867
+m=hfcr:35     POST https://accounts.google.com/RotateCookies 429
+ob @ m=hfcr:35
+qb @ m=hfcr:36
+(anonymous) @ m=hfcr:34
+setTimeout (async)
+(anonymous) @ m=hfcr:34
+kb @ m=hfcr:34
+d @ m=hfcr:33
+(anonymous) @ m=hfcr:33
+setTimeout (async)
+hb.start @ m=hfcr:33
+rb @ m=hfcr:37
+(anonymous) @ RotateCookiesPage?og_pid=1&rot=3&origin=https%3A%2F%2Fwww.google.com&exp_id=3701183:1
+The service worker navigation preload request was cancelled before 'preloadResponse' settled. If you intend to use 'preloadResponse', use waitUntil() or respondWith() to wait for the promise to settle.
+The FetchEvent for "https://www.youtube.com/embed/?controls=0&enablejsapi=1&iv_load_policy=3&modestbranding=1&mute=1&rel=0&showinfo=0&origin=https%3A%2F%2Fwww.youtube.com&widgetid=4" resulted in a network error response: the promise was rejected.
+Promise.then (async)
+(anonymous) @ serviceworker-kevlar-appshell.js:826
+(anonymous) @ serviceworker-kevlar-appshell.js:7
+ea @ serviceworker-kevlar-appshell.js:6
+u @ serviceworker-kevlar-appshell.js:8
+m @ serviceworker-kevlar-appshell.js:825
+sw.js:1 Uncaught (in promise) DOMException: The service worker navigation preload request was cancelled before 'preloadResponse' settled. If you intend to use 'preloadResponse', use waitUntil() or respondWith() to wait for the promise to settle.
+VM1751 Script snippet #1:2 The value of a is undefined
+VM1751 Script snippet #1:4 The value of b is undefined
+VM1751 Script snippet #1:1 undefined
+VM1835 Script snippet #1:2 The value of a is undefined
+VM1835 Script snippet #1:4 The value of b is undefined
+VM1751 Script snippet #1:1 undefined
+Script snippet #1:2 The value of a is undefined
+Script snippet #1:4 The value of b is undefined
+VM1751 Script snippet #1:1 undefined
