@@ -1,3 +1,4 @@
+.
 Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
 googleads.g.doubleclick.net/pagead/id:1     Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
 static.doubleclick.net/instream/ad_status.js:1     Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
