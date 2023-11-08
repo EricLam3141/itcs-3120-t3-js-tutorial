@@ -1,0 +1,97 @@
+const foo = new String("foo"); // Creates a String object
+console.log(foo); // [String: 'foo']
+typeof foo; // 'object'
+VM526:2 String {'foo'}
+'object'
+VM527 Script snippet #2:2 String {'foo'}
+VM295 Script snippet #2:1 'object'
+
+const firstString = "2 + 2"; // Creates a string literal value
+const secondString = new String("2 + 2"); // Creates a String object
+eval(firstString); // Returns the number 4
+eval(secondString); // Returns a String object containing "2 + 2"
+String {'2 + 2'}
+const hello = "Hello, World!";
+const helloLength = hello.length;
+hello[0] = "L"; // This has no effect, because strings are immutable
+hello[0]; // This returns "H"
+'H'
+VM531 Script snippet #2:2 String {'foo'}
+VM295 Script snippet #2:1 'H'
+VM534 Script snippet #2:2 String {'foo'}
+VM534 Script snippet #2:15 string text line 1
+string text line 2
+VM295 Script snippet #2:1 undefined
+VM537 Script snippet #2:2 String {'foo'}
+VM537 Script snippet #2:15 string text line 1
+string text line 2
+VM537 Script snippet #2:22 string text line 1
+string text line 2
+VM295 Script snippet #2:1 undefined
+console.log(`string text line 1
+string text line 2`);
+// "string text line 1
+// string text line 2"
+VM540:1 string text line 1
+string text line 2
+undefined
+const five = 5;
+const ten = 10;
+console.log(
+  "Fifteen is " + (five + ten) + " and not " + (2 * five + ten) + ".",
+);
+// "Fifteen is 15 and not 20."
+VM541:3 Fifteen is 15 and not 20.
+undefined
+const five = 5;
+const ten = 10;
+console.log(`Fifteen is ${five + ten} and not ${2 * five + ten}.`);
+// "Fifteen is 15 and not 20."
+VM542:3 Fifteen is 15 and not 20.
+undefined
+const july172014 = new Date("2014-07-17");
+
+const options = {
+  year: "2-digit",
+  month: "2-digit",
+  day: "2-digit",
+  hour: "2-digit",
+  minute: "2-digit",
+  timeZoneName: "short",
+};
+const americanDateTime = new Intl.DateTimeFormat("en-US", options).format;
+
+// Local timezone vary depending on your settings
+// In CEST, logs: 07/17/14, 02:00 AM GMT+2
+// In PDT, logs: 07/16/14, 05:00 PM GMT-7
+console.log(americanDateTime(july172014));
+VM543:16 07/16/14, 08:00 PM EDT
+undefined
+VM544 Script snippet #2:34 Uncaught SyntaxError: Identifier 'five' has already been declared (at VM544 Script snippet #2:34:7)
+const gasPrice = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+  minimumFractionDigits: 3,
+});
+
+console.log(gasPrice.format(5.259)); // $5.259
+
+const hanDecimalRMBInChina = new Intl.NumberFormat("zh-CN-u-nu-hanidec", {
+  style: "currency",
+  currency: "CNY",
+});
+
+console.log(hanDecimalRMBInChina.format(1314.25)); // ￥ 一,三一四.二五
+VM546:7 $5.259
+VM546:14 ¥一,三一四.二五
+undefined
+VM547 Script snippet #2:34 Uncaught SyntaxError: Identifier 'five' has already been declared (at VM547 Script snippet #2:34:7)
+const names = ["Hochberg", "Hönigswald", "Holzman"];
+
+const germanPhonebook = new Intl.Collator("de-DE-u-co-phonebk");
+
+// as if sorting ["Hochberg", "Hoenigswald", "Holzman"]:
+console.log(names.sort(germanPhonebook.compare).join(", "));
+// "Hochberg, Hönigswald, Holzman"
+VM548:6 Hochberg, Hönigswald, Holzman
+undefined
