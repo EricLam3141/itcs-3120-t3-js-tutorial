@@ -1,0 +1,236 @@
+VM1005 Script snippet #2:2 Uncaught ReferenceError: value1 is not defined
+    at VM1005 Script snippet #2:2:14
+(anonymous) @ VM1005 Script snippet #2:2
+const obj = {
+  property1: value1, // property name may be an identifier
+  2: value2, // or a number
+  "property n": value3, // or a string
+};
+VM1006:2 Uncaught ReferenceError: value1 is not defined
+    at <anonymous>:2:14
+(anonymous) @ VM1006:2
+let x;
+if (cond) {
+  x = { greeting: "hi there" };
+}
+VM1007:2 Uncaught ReferenceError: cond is not defined
+    at <anonymous>:2:1
+(anonymous) @ VM1007:2
+const myHonda = {
+  color: "red",
+  wheels: 4,
+  engine: { cylinders: 4, size: 2.2 },
+};
+undefined
+
+function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}
+undefined
+
+const myCar = new Car("Eagle", "Talon TSi", 1993);
+undefined
+const myHonda = {
+  color: "red",
+  wheels: 4,
+  engine: { cylinders: 4, size: 2.2 },
+};
+
+function Car(make, model, year) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+}
+
+const myCar = new Car("Eagle", "Talon TSi", 1993);
+const kenscar = new Car("Nissan", "300ZX", 1992);
+const vpgscar = new Car("Mazda", "Miata", 1990);
+
+function Person(name, age, sex) {
+  this.name = name;
+  this.age = age;
+  this.sex = sex;
+}
+
+const rand = new Person("Rand McKinnon", 33, "M");
+const ken = new Person("Ken Jones", 39, "M");
+undefined
+VM1012 Script snippet #2:2 Uncaught ReferenceError: value1 is not defined
+    at VM1012 Script snippet #2:2:14
+(anonymous) @ VM1012 Script snippet #2:2
+function Car(make, model, year, owner) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+  this.owner = owner;
+}
+
+const car1 = new Car("Eagle", "Talon TSi", 1993, rand);
+const car2 = new Car("Nissan", "300ZX", 1992, ken);
+
+car2.owner.name;
+'Ken Jones'
+const Animal = {
+  type: "Invertebrates", // Default value of properties
+  displayType() {
+    // Method which will display type of Animal
+    console.log(this.type);
+  },
+};
+
+// Create new animal type called animal1
+const animal1 = Object.create(Animal);
+animal1.displayType(); // Logs: Invertebrates
+
+// Create new animal type called fish
+const fish = Object.create(Animal);
+fish.type = "Fishes";
+fish.displayType(); // Logs: Fishes
+VM1015:5 Invertebrates
+VM1015:5 Fishes
+undefined
+const myCar = {
+  make: "Ford",
+  model: "Mustang",
+  year: 1969,
+};
+
+myCar.make = "Ford";
+myCar.model = "Mustang";
+myCar.year = 1969;
+
+// Bracket notation
+myCar["make"] = "Ford";
+myCar["model"] = "Mustang";
+myCar["year"] = 1969;
+1969
+// Create additional properties on myObj
+myObj.type = "Dot syntax for a key named type";
+myObj["date created"] = "This key has a space";
+myObj[str] = "This key is in variable str";
+myObj[rand] = "A random number is the key here";
+myObj[anotherObj] = "This key is object anotherObj";
+myObj[""] = "This key is an empty string";
+
+console.log(myObj);
+// {
+//   type: 'Dot syntax for a key named type',
+//   'date created': 'This key has a space',
+//   myString: 'This key is in variable str',
+//   '0.6398914448618778': 'A random number is the key here',
+//   '[object Object]': 'This key is object anotherObj',
+//   '': 'This key is an empty string'
+// }
+console.log(myObj.myString); // 'This key is in variable str'
+VM1017:4 Uncaught ReferenceError: str is not defined
+    at <anonymous>:4:7
+(anonymous) @ VM1017:4
+function showProps(obj, objName) {
+  let result = "";
+  for (const i in obj) {
+    // Object.hasOwn() is used to exclude properties from the object's
+    // prototype chain and only show "own properties"
+    if (Object.hasOwn(obj, i)) {
+      result += `${objName}.${i} = ${obj[i]}\n`;
+    }
+  }
+  console.log(result);
+}
+
+myCar.make = Ford
+myCar.model = Mustang
+myCar.year = 1969
+VM1018:13 Uncaught ReferenceError: Ford is not defined
+    at <anonymous>:13:14
+(anonymous) @ VM1018:13
+function listAllProperties(myObj) {
+  let objectToInspect = myObj;
+  let result = [];
+
+  while (objectToInspect !== null) {
+    result = result.concat(Object.getOwnPropertyNames(objectToInspect));
+    objectToInspect = Object.getPrototypeOf(objectToInspect);
+  }
+
+  return result;
+}
+undefined
+const Manager = {
+  name: "Karina",
+  age: 27,
+  job: "Software Engineer",
+};
+const Intern = {
+  name: "Tyrone",
+  age: 21,
+  job: "Software Engineer Intern",
+};
+
+function sayHi() {
+  console.log(`Hello, my name is ${this.name}`);
+}
+
+// add sayHi function to both objects
+Manager.sayHi = sayHi;
+Intern.sayHi = sayHi;
+
+Manager.sayHi(); // Hello, my name is Karina
+Intern.sayHi(); // Hello, my name is Tyrone
+
+const myObj = {
+  a: 7,
+  get b() {
+    return this.a + 1;
+  },
+  set c(x) {
+    this.a = x / 2;
+  },
+};
+
+console.log(myObj.a); // 7
+console.log(myObj.b); // 8, returned from the get b() method
+myObj.c = 50; // Calls the set c(x) method
+console.log(myObj.a); // 25
+VM1021:13 Hello, my name is Karina
+VM1021:13 Hello, my name is Tyrone
+VM1021:33 7
+VM1021:34 8
+VM1021:36 25
+undefined
+VM1022 Script snippet #2:67 Uncaught SyntaxError: Identifier 'myCar' has already been declared (at VM1022 Script snippet #2:67:7)
+Object.defineProperties(myObj, {
+  b: {
+    get() {
+      return this.a + 1;
+    },
+  },
+  c: {
+    set(x) {
+      this.a = x / 2;
+    },
+  },
+});
+
+myObj.c = 10; // Runs the setter, which assigns 10 / 2 (5) to the 'a' property
+console.log(myObj.b); // Runs the getter, which yields a + 1 or 6
+VM1024:15 6
+undefined
+const fruit = { name: "apple" };
+const fruitbear = { name: "apple" };
+
+fruit == fruitbear; // return false
+fruit === fruitbear; // return false
+false
+const fruit = { name: "apple" };
+const fruitbear = fruit; // Assign fruit object reference to fruitbear
+
+// Here fruit and fruitbear are pointing to same object
+fruit == fruitbear; // return true
+fruit === fruitbear; // return true
+
+fruit.name = "grape";
+console.log(fruitbear); // { name: "grape" }; not { name: "apple" }
+VM1026:9 {name: 'grape'}
+undefined
