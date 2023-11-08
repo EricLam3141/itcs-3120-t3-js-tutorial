@@ -1,0 +1,198 @@
+const arr1 = new Array(element0, element1, /* …, */ elementN);
+const arr2 = Array(element0, element1, /* …, */ elementN);
+const arr3 = [element0, element1, /* …, */ elementN];
+VM756:1 Uncaught ReferenceError: element0 is not defined
+    at <anonymous>:1:24
+(anonymous) @ VM756:1
+// This...
+const arr1 = new Array(arrayLength);
+
+// ...results in the same array as this
+const arr2 = Array(arrayLength);
+
+// This has exactly the same effect
+const arr3 = [];
+arr3.length = arrayLength;
+VM757:2 Uncaught ReferenceError: arrayLength is not defined
+    at <anonymous>:2:24
+(anonymous) @ VM757:2
+VM758 Script snippet #2:6 Uncaught SyntaxError: Identifier 'arr1' has already been declared (at VM758 Script snippet #2:6:7)
+const obj = {};
+// …
+obj.prop = [element0, element1, /* …, */ elementN];
+
+// OR
+const obj = { prop: [element0, element1, /* …, */ elementN] };
+VM759:6 Uncaught SyntaxError: Identifier 'obj' has already been declared
+const arr = [];
+arr.length = 42;
+42
+const emp = [];
+emp[0] = "Casey Jones";
+emp[1] = "Phil Lesh";
+emp[2] = "August West";
+'August West'
+const arr = [];
+arr[3.4] = "Oranges";
+console.log(arr.length); // 0
+console.log(Object.hasOwn(arr, 3.4)); // true
+VM784:3 0
+VM784:4 true
+undefined
+const myArray = new Array("Hello", myVar, 3.14159);
+// OR
+const myArray = ["Mango", "Apple", "Orange"];
+VM785:3 Uncaught SyntaxError: Identifier 'myArray' has already been declared
+const cats = [];
+cats[30] = ["Dusty"];
+console.log(cats.length); // 31
+VM786:3 31
+undefined
+cats.length = 2;
+console.log(cats); // [ 'Dusty', 'Misty' ] - Twiggy has been removed
+
+cats.length = 0;
+console.log(cats); // []; the cats array is empty
+
+cats.length = 3;
+console.log(cats); // [ <3 empty items> ]
+VM787:2 (2) [empty × 2]
+VM787:5 []
+VM787:8 (3) [empty × 3]
+undefined
+const colors = ["red", "green", "blue"];
+for (let i = 0; i < colors.length; i++) {
+  console.log(colors[i]);
+}
+VM788:3 red
+VM788:3 green
+VM788:3 blue
+undefined
+const divs = document.getElementsByTagName("div");
+for (let i = 0, div; (div = divs[i]); i++) {
+  /* Process div in some way */
+}
+undefined
+nonsparseArray.forEach((element) => {
+  console.log(element);
+});
+// Logs:
+// first
+// second
+// undefined
+// fourth
+VM790:1 Uncaught ReferenceError: nonsparseArray is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM790:1
+const nonsparseArray = ["first", "second", undefined, "fourth"];
+
+nonsparseArray.forEach((element) => {
+  console.log(element);
+});
+// Logs:
+// first
+// second
+// undefined
+// fourth
+VM791:4 first
+VM791:4 second
+VM791:4 undefined
+VM791:4 fourth
+undefined
+let myArray = ["1", "2", "3"];
+myArray = myArray.concat("a", "b", "c");
+// myArray is now ["1", "2", "3", "a", "b", "c"]
+(6) ['1', '2', '3', 'a', 'b', 'c']
+const myArray = ["1", "2", "3", "4", "5"];
+myArray.splice(1, 3, "a", "b", "c", "d");
+VM793:1 Uncaught SyntaxError: Identifier 'myArray' has already been declared
+myArray = ["1", "2", "3", "4", "5"];
+myArray.splice(1, 3, "a", "b", "c", "d");
+(3) ['2', '3', '4']
+const sortFn = (a, b) => {
+  if (a[a.length - 1] < b[b.length - 1]) {
+    return -1; // Negative number => a < b, a comes before b
+  } else if (a[a.length - 1] > b[b.length - 1]) {
+    return 1; // Positive number => a > b, a comes after b
+  }
+  return 0; // Zero => a = b, a and b keep their original order
+};
+myArray.sort(sortFn);
+// sorts the array so that myArray = ["Wind","Fire","Rain"]
+(6) ['1', '5', 'a', 'b', 'c', 'd']
+const a1 = ["a", "b", "c"];
+const a2 = a1.flatMap((item) => [item.toUpperCase(), item.toLowerCase()]);
+console.log(a2); // ['A', 'a', 'B', 'b', 'C', 'c']
+VM797:3 (6) ['A', 'a', 'B', 'b', 'C', 'c']
+undefined
+function isNumber(value) {
+  return typeof value === "number";
+}
+const a1 = [1, 2, 3];
+console.log(a1.every(isNumber)); // true
+const a2 = [1, "2", 3];
+console.log(a2.every(isNumber)); // false
+VM798:5 true
+VM798:7 false
+undefined
+const inventory = [
+  { name: "asparagus", type: "vegetables" },
+  { name: "bananas", type: "fruit" },
+  { name: "goat", type: "meat" },
+  { name: "cherries", type: "fruit" },
+  { name: "fish", type: "meat" },
+];
+undefined
+// Array constructor:
+const a = Array(5); // [ <5 empty items> ]
+
+// Consecutive commas in array literal:
+const b = [1, 2, , , 5]; // [ 1, 2, <2 empty items>, 5 ]
+
+// Directly setting a slot with index greater than array.length:
+const c = [1, 2];
+c[4] = 5; // [ 1, 2, <2 empty items>, 5 ]
+
+// Elongating an array by directly setting .length:
+const d = [1, 2];
+d.length = 5; // [ 1, 2, <3 empty items> ]
+
+// Deleting an element:
+const e = [1, 2, 3, 4, 5];
+delete e[2]; // [ 1, 2, <1 empty item>, 4, 5 ]
+true
+const a = new Array(4);
+for (let i = 0; i < 4; i++) {
+  a[i] = new Array(4);
+  for (let j = 0; j < 4; j++) {
+    a[i][j] = `[${i}, ${j}]`;
+  }
+}
+'[3, 3]'
+The service worker navigation preload request was cancelled before 'preloadResponse' settled. If you intend to use 'preloadResponse', use waitUntil() or respondWith() to wait for the promise to settle.
+The FetchEvent for "https://www.youtube.com/embed/?controls=0&enablejsapi=1&iv_load_policy=3&modestbranding=1&mute=1&rel=0&showinfo=0&origin=https%3A%2F%2Fwww.youtube.com&widgetid=3" resulted in a network error response: the promise was rejected.
+Promise.then (async)
+(anonymous) @ serviceworker-kevlar-appshell.js:826
+(anonymous) @ serviceworker-kevlar-appshell.js:7
+ea @ serviceworker-kevlar-appshell.js:6
+u @ serviceworker-kevlar-appshell.js:8
+m @ serviceworker-kevlar-appshell.js:825
+sw.js:1 Uncaught (in promise) DOMException: The service worker navigation preload request was cancelled before 'preloadResponse' settled. If you intend to use 'preloadResponse', use waitUntil() or respondWith() to wait for the promise to settle.
+Array.prototype.forEach.call("a string", (chr) => {
+  console.log(chr);
+});
+VM803:2 a
+VM803:2  
+VM803:2 s
+VM803:2 t
+VM803:2 r
+VM803:2 i
+VM803:2 n
+VM803:2 g
+undefined
+function printArguments() {
+  Array.prototype.forEach.call(arguments, (item) => {
+    console.log(item);
+  });
+}
+undefined
