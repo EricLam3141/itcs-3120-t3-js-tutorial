@@ -1,0 +1,44 @@
+Start - sync version
+using-promises.js:27 doTask1: complete in 5000 ms.  Return value: 1
+using-promises.js:39 doTask2: complete in 5000 ms.  Return value: 2
+using-promises.js:51 doTask3: complete in 5000 ms.  Return value: 3
+using-promises.js:244 task3Result: 3
+using-promises.js:232 [Violation] 'click' handler took 14999ms
+using-promises.js:240 
+Start - sync version
+using-promises.js:27 doTask1: complete in 5000 ms.  Return value: 1
+using-promises.js:39 doTask2: complete in 5000 ms.  Return value: 2
+using-promises.js:51 doTask3: complete in 5000 ms.  Return value: 3
+using-promises.js:244 task3Result: 3
+using-promises.js:232 [Violation] 'click' handler took 14999ms
+using-promises.js:240 
+Start - sync version
+using-promises.js:27 doTask1: complete in 5000 ms.  Return value: 1
+using-promises.js:39 doTask2: complete in 5000 ms.  Return value: 2
+using-promises.js:51 doTask3: complete in 5000 ms.  Return value: 3
+using-promises.js:244 task3Result: 3
+using-promises.js:232 [Violation] 'click' handler took 14999ms
+using-promises.js:240 
+Start - sync version
+using-promises.js:27 doTask1: complete in 5000 ms.  Return value: 1
+using-promises.js:39 doTask2: complete in 5000 ms.  Return value: 2
+using-promises.js:51 doTask3: complete in 5000 ms.  Return value: 3
+using-promises.js:244 task3Result: 3
+using-promises.js:232 [Violation] 'click' handler took 14999ms
+ 
+Start - async version 1
+Navigated to https://webpages.charlotte.edu/zwartell/Teaching/ITCS%203120%20-%20JavaScript%20Tutorial/exercises/using%20promises/using-promises.html
+using-promises.js:251 
+Start - async version 1
+using-promises.js:77 doTask1_Async: complete in 5000 ms.  Return value: 1
+using-promises.js:138 whenTask1Complete:  task1Result = 1
+using-promises.js:101 doTask2_Async: complete in 5001 ms.  Return value: 2
+using-promises.js:143 whenTask2Complete:  task2Result = 2
+using-promises.js:125 doTask3_Async: complete in 5002 ms.  Return value: 3
+using-promises.js:149 whenTask3Complete:  task3Result = 3
+using-promises.js:260 
+Start - async version 2
+using-promises.js:77 doTask1_Async: complete in 5002 ms.  Return value: 1
+using-promises.js:101 doTask2_Async: complete in 5002 ms.  Return value: 2
+using-promises.js:125 doTask3_Async: complete in 5004 ms.  Return value: 3
+using-promises.js:270 task3Result: 3
