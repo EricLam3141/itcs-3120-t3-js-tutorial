@@ -144,6 +144,7 @@ typeof Math; // returns "object"
 typeof Option; // returns "function"
 typeof String; // returns "function"
 'function'
+
 const trees = ["redwood", "bay", "cedar", "oak", "maple"];
 0 in trees; // returns true
 3 in trees; // returns true
