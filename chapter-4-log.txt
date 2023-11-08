@@ -1,0 +1,548 @@
+Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
+googleads.g.doubleclick.net/pagead/id:1     Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
+static.doubleclick.net/instream/ad_status.js:1     Failed to load resource: net::ERR_BLOCKED_BY_CLIENT
+The service worker navigation preload request was cancelled before 'preloadResponse' settled. If you intend to use 'preloadResponse', use waitUntil() or respondWith() to wait for the promise to settle.
+Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
+Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.
+DevTools failed to load source map: Could not load content for https://www.google.com/chrome.css.map: HTTP error: status code 404, net::ERR_HTTP_RESPONSE_CODE_FAILURE
+DevTools failed to load source map: Could not load content for https://www.google.com/_/mss/boq-one-google/_/ss/k=boq-one-google.OneGoogleWidgetUi.bFYcbJ5k0Tw.L.W.O/am=CGHIGw/d=1/ed=1/rs=AM-SdHty-QPU6SOWoO7ufFkvX7iw1auVdw/chrome.css.map: HTTP error: status code 404, net::ERR_HTTP_RESPONSE_CODE_FAILURE
+5VM295 Script snippet #2:3 Walking east one step
+VM295 Script snippet #2:23 1
+VM295 Script snippet #2:23 2
+VM295 Script snippet #2:23 3
+VM295 Script snippet #2:23 4
+VM295 Script snippet #2:23 5
+VM295 Script snippet #2:1 6
+for (let step = 0; step < 5; step++) {
+  // Runs 5 times, with values of step 0 through 4.
+  console.log("Walking east one step");
+}
+
+function countSelected(selectObject) {
+  let numberSelected = 0;
+  for (let i = 0; i < selectObject.options.length; i++) {
+    if (selectObject.options[i].selected) {
+      numberSelected++;
+    }
+  }
+  return numberSelected;
+}
+
+
+
+
+
+let i = 0;
+do {
+  i += 1;
+  console.log(i);
+} while (i < 5);
+
+let n = 0;
+x = 0;
+while (n < 3) {
+  n++;
+  x += n;
+}
+
+
+5VM296:3 Walking east one step
+VM296:23 1
+VM296:23 2
+VM296:23 3
+VM296:23 4
+VM296:23 5
+6
+VM299 Script snippet #2:29 Uncaught SyntaxError: Identifier 'n' has already been declared (at VM299 Script snippet #2:29:5)
+5VM300 Script snippet #2:3 Walking east one step
+VM300 Script snippet #2:19 1
+VM300 Script snippet #2:19 2
+VM300 Script snippet #2:19 3
+VM300 Script snippet #2:19 4
+VM300 Script snippet #2:19 5
+VM300 Script snippet #2:23 Uncaught ReferenceError: Cannot access 'x' before initialization
+    at VM300 Script snippet #2:23:3
+(anonymous) @ VM300 Script snippet #2:23
+VM303 Script snippet #2:36 Uncaught SyntaxError: Identifier 'x' has already been declared (at VM303 Script snippet #2:36:5)
+5VM305 Script snippet #2:3 Walking east one step
+VM305 Script snippet #2:19 1
+VM305 Script snippet #2:19 2
+VM305 Script snippet #2:19 3
+VM305 Script snippet #2:19 4
+VM305 Script snippet #2:19 5
+VM305 Script snippet #2:39 Outer loops: 0
+VM305 Script snippet #2:43 Inner loops: 1
+VM305 Script snippet #2:43 Inner loops: 2
+VM305 Script snippet #2:43 Inner loops: 3
+VM305 Script snippet #2:43 Inner loops: 4
+VM305 Script snippet #2:43 Inner loops: 5
+VM305 Script snippet #2:43 Inner loops: 6
+VM305 Script snippet #2:43 Inner loops: 7
+VM305 Script snippet #2:43 Inner loops: 8
+VM305 Script snippet #2:43 Inner loops: 9
+VM305 Script snippet #2:39 Outer loops: 1
+VM305 Script snippet #2:43 Inner loops: 1
+VM305 Script snippet #2:43 Inner loops: 2
+VM305 Script snippet #2:43 Inner loops: 3
+VM305 Script snippet #2:43 Inner loops: 4
+VM305 Script snippet #2:43 Inner loops: 5
+VM305 Script snippet #2:43 Inner loops: 6
+VM305 Script snippet #2:43 Inner loops: 7
+VM305 Script snippet #2:43 Inner loops: 8
+VM305 Script snippet #2:43 Inner loops: 9
+VM305 Script snippet #2:39 Outer loops: 2
+VM305 Script snippet #2:43 Inner loops: 1
+VM305 Script snippet #2:43 Inner loops: 2
+VM305 Script snippet #2:43 Inner loops: 3
+VM305 Script snippet #2:43 Inner loops: 4
+VM305 Script snippet #2:43 Inner loops: 5
+VM305 Script snippet #2:43 Inner loops: 6
+VM305 Script snippet #2:43 Inner loops: 7
+VM305 Script snippet #2:43 Inner loops: 8
+VM305 Script snippet #2:43 Inner loops: 9
+VM305 Script snippet #2:39 Outer loops: 3
+VM305 Script snippet #2:43 Inner loops: 1
+VM305 Script snippet #2:43 Inner loops: 2
+VM305 Script snippet #2:43 Inner loops: 3
+VM305 Script snippet #2:43 Inner loops: 4
+VM305 Script snippet #2:43 Inner loops: 5
+VM305 Script snippet #2:43 Inner loops: 6
+VM305 Script snippet #2:43 Inner loops: 7
+VM305 Script snippet #2:43 Inner loops: 8
+VM305 Script snippet #2:43 Inner loops: 9
+VM305 Script snippet #2:39 Outer loops: 4
+VM305 Script snippet #2:43 Inner loops: 1
+VM305 Script snippet #2:43 Inner loops: 2
+VM305 Script snippet #2:43 Inner loops: 3
+VM305 Script snippet #2:43 Inner loops: 4
+VM305 Script snippet #2:43 Inner loops: 5
+VM305 Script snippet #2:43 Inner loops: 6
+VM305 Script snippet #2:43 Inner loops: 7
+VM305 Script snippet #2:43 Inner loops: 8
+VM305 Script snippet #2:43 Inner loops: 9
+VM305 Script snippet #2:39 Outer loops: 5
+VM305 Script snippet #2:43 Inner loops: 1
+VM305 Script snippet #2:43 Inner loops: 2
+VM305 Script snippet #2:43 Inner loops: 3
+VM305 Script snippet #2:43 Inner loops: 4
+VM305 Script snippet #2:43 Inner loops: 5
+VM305 Script snippet #2:43 Inner loops: 6
+VM305 Script snippet #2:43 Inner loops: 7
+VM305 Script snippet #2:43 Inner loops: 8
+VM305 Script snippet #2:43 Inner loops: 9
+VM305 Script snippet #2:39 Outer loops: 6
+VM305 Script snippet #2:43 Inner loops: 1
+VM305 Script snippet #2:43 Inner loops: 2
+VM305 Script snippet #2:43 Inner loops: 3
+VM305 Script snippet #2:43 Inner loops: 4
+VM305 Script snippet #2:43 Inner loops: 5
+VM305 Script snippet #2:43 Inner loops: 6
+VM305 Script snippet #2:43 Inner loops: 7
+VM305 Script snippet #2:43 Inner loops: 8
+VM305 Script snippet #2:43 Inner loops: 9
+VM305 Script snippet #2:39 Outer loops: 7
+VM305 Script snippet #2:43 Inner loops: 1
+VM305 Script snippet #2:43 Inner loops: 2
+VM305 Script snippet #2:43 Inner loops: 3
+VM305 Script snippet #2:43 Inner loops: 4
+VM305 Script snippet #2:43 Inner loops: 5
+VM305 Script snippet #2:43 Inner loops: 6
+VM305 Script snippet #2:43 Inner loops: 7
+VM305 Script snippet #2:43 Inner loops: 8
+VM305 Script snippet #2:43 Inner loops: 9
+VM305 Script snippet #2:39 Outer loops: 8
+VM305 Script snippet #2:43 Inner loops: 1
+VM305 Script snippet #2:43 Inner loops: 2
+VM305 Script snippet #2:43 Inner loops: 3
+VM305 Script snippet #2:43 Inner loops: 4
+VM305 Script snippet #2:43 Inner loops: 5
+VM305 Script snippet #2:43 Inner loops: 6
+VM305 Script snippet #2:43 Inner loops: 7
+VM305 Script snippet #2:43 Inner loops: 8
+VM305 Script snippet #2:43 Inner loops: 9
+VM305 Script snippet #2:39 Outer loops: 9
+VM305 Script snippet #2:43 Inner loops: 1
+VM305 Script snippet #2:43 Inner loops: 2
+VM305 Script snippet #2:43 Inner loops: 3
+VM305 Script snippet #2:43 Inner loops: 4
+VM305 Script snippet #2:43 Inner loops: 5
+VM305 Script snippet #2:43 Inner loops: 6
+VM305 Script snippet #2:43 Inner loops: 7
+VM305 Script snippet #2:43 Inner loops: 8
+VM305 Script snippet #2:43 Inner loops: 9
+VM295 Script snippet #2:1 undefined
+for (let step = 0; step < 5; step++) {
+  // Runs 5 times, with values of step 0 through 4.
+  console.log("Walking east one step");
+}
+
+function countSelected(selectObject) {
+  let numberSelected = 0;
+  for (let i = 0; i < selectObject.options.length; i++) {
+    if (selectObject.options[i].selected) {
+      numberSelected++;
+    }
+  }
+  return numberSelected;
+}
+
+let i = 0;
+do {
+  i += 1;
+  console.log(i);
+} while (i < 5);
+
+let n = 0;
+let x = 0;
+while (n < 3) {
+  n++;
+  x += n;
+}
+
+n = 0;
+x = 0;
+while (n < 3) {
+  n++;
+  x += n;
+}
+
+x = 0;
+let z = 0;
+labelCancelLoops: while (true) {
+  console.log("Outer loops:", x);
+  x += 1;
+  z = 1;
+  while (true) {
+    console.log("Inner loops:", z);
+    z += 1;
+    if (z === 10 && x === 10) {
+      break labelCancelLoops;
+    } else if (z === 10) {
+      break;
+    }
+  }
+}
+
+let i = 0;
+let n = 0;
+while (i < 5) {
+  i++;
+  if (i === 3) {
+    continue;
+  }
+  n += i;
+  console.log(n);
+}
+VM306:53 Uncaught SyntaxError: Identifier 'i' has already been declared
+VM307 Script snippet #2:54 Uncaught SyntaxError: Identifier 'n' has already been declared (at VM307 Script snippet #2:54:5)
+5VM309 Script snippet #2:3 Walking east one step
+VM309 Script snippet #2:19 1
+VM309 Script snippet #2:19 2
+VM309 Script snippet #2:19 3
+VM309 Script snippet #2:19 4
+VM309 Script snippet #2:19 5
+VM309 Script snippet #2:39 Outer loops: 0
+VM309 Script snippet #2:43 Inner loops: 1
+VM309 Script snippet #2:43 Inner loops: 2
+VM309 Script snippet #2:43 Inner loops: 3
+VM309 Script snippet #2:43 Inner loops: 4
+VM309 Script snippet #2:43 Inner loops: 5
+VM309 Script snippet #2:43 Inner loops: 6
+VM309 Script snippet #2:43 Inner loops: 7
+VM309 Script snippet #2:43 Inner loops: 8
+VM309 Script snippet #2:43 Inner loops: 9
+VM309 Script snippet #2:39 Outer loops: 1
+VM309 Script snippet #2:43 Inner loops: 1
+VM309 Script snippet #2:43 Inner loops: 2
+VM309 Script snippet #2:43 Inner loops: 3
+VM309 Script snippet #2:43 Inner loops: 4
+VM309 Script snippet #2:43 Inner loops: 5
+VM309 Script snippet #2:43 Inner loops: 6
+VM309 Script snippet #2:43 Inner loops: 7
+VM309 Script snippet #2:43 Inner loops: 8
+VM309 Script snippet #2:43 Inner loops: 9
+VM309 Script snippet #2:39 Outer loops: 2
+VM309 Script snippet #2:43 Inner loops: 1
+VM309 Script snippet #2:43 Inner loops: 2
+VM309 Script snippet #2:43 Inner loops: 3
+VM309 Script snippet #2:43 Inner loops: 4
+VM309 Script snippet #2:43 Inner loops: 5
+VM309 Script snippet #2:43 Inner loops: 6
+VM309 Script snippet #2:43 Inner loops: 7
+VM309 Script snippet #2:43 Inner loops: 8
+VM309 Script snippet #2:43 Inner loops: 9
+VM309 Script snippet #2:39 Outer loops: 3
+VM309 Script snippet #2:43 Inner loops: 1
+VM309 Script snippet #2:43 Inner loops: 2
+VM309 Script snippet #2:43 Inner loops: 3
+VM309 Script snippet #2:43 Inner loops: 4
+VM309 Script snippet #2:43 Inner loops: 5
+VM309 Script snippet #2:43 Inner loops: 6
+VM309 Script snippet #2:43 Inner loops: 7
+VM309 Script snippet #2:43 Inner loops: 8
+VM309 Script snippet #2:43 Inner loops: 9
+VM309 Script snippet #2:39 Outer loops: 4
+VM309 Script snippet #2:43 Inner loops: 1
+VM309 Script snippet #2:43 Inner loops: 2
+VM309 Script snippet #2:43 Inner loops: 3
+VM309 Script snippet #2:43 Inner loops: 4
+VM309 Script snippet #2:43 Inner loops: 5
+VM309 Script snippet #2:43 Inner loops: 6
+VM309 Script snippet #2:43 Inner loops: 7
+VM309 Script snippet #2:43 Inner loops: 8
+VM309 Script snippet #2:43 Inner loops: 9
+VM309 Script snippet #2:39 Outer loops: 5
+VM309 Script snippet #2:43 Inner loops: 1
+VM309 Script snippet #2:43 Inner loops: 2
+VM309 Script snippet #2:43 Inner loops: 3
+VM309 Script snippet #2:43 Inner loops: 4
+VM309 Script snippet #2:43 Inner loops: 5
+VM309 Script snippet #2:43 Inner loops: 6
+VM309 Script snippet #2:43 Inner loops: 7
+VM309 Script snippet #2:43 Inner loops: 8
+VM309 Script snippet #2:43 Inner loops: 9
+VM309 Script snippet #2:39 Outer loops: 6
+VM309 Script snippet #2:43 Inner loops: 1
+VM309 Script snippet #2:43 Inner loops: 2
+VM309 Script snippet #2:43 Inner loops: 3
+VM309 Script snippet #2:43 Inner loops: 4
+VM309 Script snippet #2:43 Inner loops: 5
+VM309 Script snippet #2:43 Inner loops: 6
+VM309 Script snippet #2:43 Inner loops: 7
+VM309 Script snippet #2:43 Inner loops: 8
+VM309 Script snippet #2:43 Inner loops: 9
+VM309 Script snippet #2:39 Outer loops: 7
+VM309 Script snippet #2:43 Inner loops: 1
+VM309 Script snippet #2:43 Inner loops: 2
+VM309 Script snippet #2:43 Inner loops: 3
+VM309 Script snippet #2:43 Inner loops: 4
+VM309 Script snippet #2:43 Inner loops: 5
+VM309 Script snippet #2:43 Inner loops: 6
+VM309 Script snippet #2:43 Inner loops: 7
+VM309 Script snippet #2:43 Inner loops: 8
+VM309 Script snippet #2:43 Inner loops: 9
+VM309 Script snippet #2:39 Outer loops: 8
+VM309 Script snippet #2:43 Inner loops: 1
+VM309 Script snippet #2:43 Inner loops: 2
+VM309 Script snippet #2:43 Inner loops: 3
+VM309 Script snippet #2:43 Inner loops: 4
+VM309 Script snippet #2:43 Inner loops: 5
+VM309 Script snippet #2:43 Inner loops: 6
+VM309 Script snippet #2:43 Inner loops: 7
+VM309 Script snippet #2:43 Inner loops: 8
+VM309 Script snippet #2:43 Inner loops: 9
+VM309 Script snippet #2:39 Outer loops: 9
+VM309 Script snippet #2:43 Inner loops: 1
+VM309 Script snippet #2:43 Inner loops: 2
+VM309 Script snippet #2:43 Inner loops: 3
+VM309 Script snippet #2:43 Inner loops: 4
+VM309 Script snippet #2:43 Inner loops: 5
+VM309 Script snippet #2:43 Inner loops: 6
+VM309 Script snippet #2:43 Inner loops: 7
+VM309 Script snippet #2:43 Inner loops: 8
+VM309 Script snippet #2:43 Inner loops: 9
+VM309 Script snippet #2:61 1
+VM309 Script snippet #2:61 3
+VM309 Script snippet #2:61 7
+VM309 Script snippet #2:61 12
+VM295 Script snippet #2:1 undefined
+www-embed-player.js:912     GET https://googleads.g.doubleclick.net/pagead/id net::ERR_BLOCKED_BY_CLIENT
+Pl @ www-embed-player.js:912
+Ml @ www-embed-player.js:897
+(anonymous) @ www-embed-player.js:1481
+Vd @ www-embed-player.js:320
+vt @ www-embed-player.js:1478
+(anonymous) @ www-embed-player.js:1501
+(anonymous) @ www-embed-player.js:867
+for (let step = 0; step < 5; step++) {
+  // Runs 5 times, with values of step 0 through 4.
+  console.log("Walking east one step");
+}
+
+function countSelected(selectObject) {
+  let numberSelected = 0;
+  for (let i = 0; i < selectObject.options.length; i++) {
+    if (selectObject.options[i].selected) {
+      numberSelected++;
+    }
+  }
+  return numberSelected;
+}
+
+let i = 0;
+do {
+  i += 1;
+  console.log(i);
+} while (i < 5);
+
+let n = 0;
+let x = 0;
+while (n < 3) {
+  n++;
+  x += n;
+}
+
+n = 0;
+x = 0;
+while (n < 3) {
+  n++;
+  x += n;
+}
+
+x = 0;
+let z = 0;
+labelCancelLoops: while (true) {
+  console.log("Outer loops:", x);
+  x += 1;
+  z = 1;
+  while (true) {
+    console.log("Inner loops:", z);
+    z += 1;
+    if (z === 10 && x === 10) {
+      break labelCancelLoops;
+    } else if (z === 10) {
+      break;
+    }
+  }
+}
+
+i = 0;
+n = 0;
+while (i < 5) {
+  i++;
+  if (i === 3) {
+    continue;
+  }
+  n += i;
+  console.log(n);
+}
+
+const arr = [3, 5, 7];
+arr.foo = "hello";
+
+for (const i in arr) {
+  console.log(i);
+}
+// "0" "1" "2" "foo"
+
+for (const i of arr) {
+  console.log(i);
+}
+5VM310:3 Walking east one step
+VM310:19 1
+VM310:19 2
+VM310:19 3
+VM310:19 4
+VM310:19 5
+VM310:39 Outer loops: 0
+VM310:43 Inner loops: 1
+VM310:43 Inner loops: 2
+VM310:43 Inner loops: 3
+VM310:43 Inner loops: 4
+VM310:43 Inner loops: 5
+VM310:43 Inner loops: 6
+VM310:43 Inner loops: 7
+VM310:43 Inner loops: 8
+VM310:43 Inner loops: 9
+VM310:39 Outer loops: 1
+VM310:43 Inner loops: 1
+VM310:43 Inner loops: 2
+VM310:43 Inner loops: 3
+VM310:43 Inner loops: 4
+VM310:43 Inner loops: 5
+VM310:43 Inner loops: 6
+VM310:43 Inner loops: 7
+VM310:43 Inner loops: 8
+VM310:43 Inner loops: 9
+VM310:39 Outer loops: 2
+VM310:43 Inner loops: 1
+VM310:43 Inner loops: 2
+VM310:43 Inner loops: 3
+VM310:43 Inner loops: 4
+VM310:43 Inner loops: 5
+VM310:43 Inner loops: 6
+VM310:43 Inner loops: 7
+VM310:43 Inner loops: 8
+VM310:43 Inner loops: 9
+VM310:39 Outer loops: 3
+VM310:43 Inner loops: 1
+VM310:43 Inner loops: 2
+VM310:43 Inner loops: 3
+VM310:43 Inner loops: 4
+VM310:43 Inner loops: 5
+VM310:43 Inner loops: 6
+VM310:43 Inner loops: 7
+VM310:43 Inner loops: 8
+VM310:43 Inner loops: 9
+VM310:39 Outer loops: 4
+VM310:43 Inner loops: 1
+VM310:43 Inner loops: 2
+VM310:43 Inner loops: 3
+VM310:43 Inner loops: 4
+VM310:43 Inner loops: 5
+VM310:43 Inner loops: 6
+VM310:43 Inner loops: 7
+VM310:43 Inner loops: 8
+VM310:43 Inner loops: 9
+VM310:39 Outer loops: 5
+VM310:43 Inner loops: 1
+VM310:43 Inner loops: 2
+VM310:43 Inner loops: 3
+VM310:43 Inner loops: 4
+VM310:43 Inner loops: 5
+VM310:43 Inner loops: 6
+VM310:43 Inner loops: 7
+VM310:43 Inner loops: 8
+VM310:43 Inner loops: 9
+VM310:39 Outer loops: 6
+VM310:43 Inner loops: 1
+VM310:43 Inner loops: 2
+VM310:43 Inner loops: 3
+VM310:43 Inner loops: 4
+VM310:43 Inner loops: 5
+VM310:43 Inner loops: 6
+VM310:43 Inner loops: 7
+VM310:43 Inner loops: 8
+VM310:43 Inner loops: 9
+VM310:39 Outer loops: 7
+VM310:43 Inner loops: 1
+VM310:43 Inner loops: 2
+VM310:43 Inner loops: 3
+VM310:43 Inner loops: 4
+VM310:43 Inner loops: 5
+VM310:43 Inner loops: 6
+VM310:43 Inner loops: 7
+VM310:43 Inner loops: 8
+VM310:43 Inner loops: 9
+VM310:39 Outer loops: 8
+VM310:43 Inner loops: 1
+VM310:43 Inner loops: 2
+VM310:43 Inner loops: 3
+VM310:43 Inner loops: 4
+VM310:43 Inner loops: 5
+VM310:43 Inner loops: 6
+VM310:43 Inner loops: 7
+VM310:43 Inner loops: 8
+VM310:43 Inner loops: 9
+VM310:39 Outer loops: 9
+VM310:43 Inner loops: 1
+VM310:43 Inner loops: 2
+VM310:43 Inner loops: 3
+VM310:43 Inner loops: 4
+VM310:43 Inner loops: 5
+VM310:43 Inner loops: 6
+VM310:43 Inner loops: 7
+VM310:43 Inner loops: 8
+VM310:43 Inner loops: 9
+VM310:61 1
+VM310:61 3
+VM310:61 7
+VM310:61 12
+VM310:68 0
+VM310:68 1
+VM310:68 2
+VM310:68 foo
+VM310:73 3
+VM310:73 5
+VM310:73 7
+undefined
