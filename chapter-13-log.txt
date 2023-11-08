@@ -1,0 +1,210 @@
+1
+VM1065 Script snippet #2:16 2
+VM1065 Script snippet #2:21 4
+VM1065 Script snippet #2:25 undefined
+VM295 Script snippet #2:1 undefined
+const o = {
+  a: 1,
+  b: 2,
+  // __proto__ sets the [[Prototype]]. It's specified here
+  // as another object literal.
+  __proto__: {
+    b: 3,
+    c: 4,
+  },
+};
+
+
+console.log(o.a); // 1
+// Is there an 'a' own property on o? Yes, and its value is 1.
+
+console.log(o.b); // 2
+// Is there a 'b' own property on o? Yes, and its value is 2.
+// The prototype also has a 'b' property, but it's not visited.
+// This is called Property Shadowing
+
+console.log(o.c); // 4
+// Is there a 'c' own property on o? No, check its prototype.
+// Is there a 'c' own property on o.[[Prototype]]? Yes, its value is 4.
+
+console.log(o.d); // undefined
+
+VM1066:13 1
+VM1066:16 2
+VM1066:21 4
+VM1066:25 undefined
+undefined
+const o = {
+  a: 1,
+  b: 2,
+  // __proto__ sets the [[Prototype]]. It's specified here
+  // as another object literal.
+  __proto__: {
+    b: 3,
+    c: 4,
+    __proto__: {
+      d: 5,
+    },
+  },
+};
+
+// { a: 1, b: 2 } ---> { b: 3, c: 4 } ---> { d: 5 } ---> Object.prototype ---> null
+
+console.log(o.d); // 5
+VM1067:17 5
+undefined
+const parent = {
+  value: 2,
+  method() {
+    return this.value + 1;
+  },
+};
+
+console.log(parent.method()); // 3
+// When calling parent.method in this case, 'this' refers to parent
+
+// child is an object that inherits from parent
+const child = {
+  __proto__: parent,
+};
+console.log(child.method()); // 3
+// When child.method is called, 'this' refers to child.
+// So when child inherits the method of parent,
+// The property 'value' is sought on child. However, since child
+// doesn't have an own property called 'value', the property is
+// found on the [[Prototype]], which is parent.value.
+
+child.value = 4; // assign the value 4 to the property 'value' on child.
+// This shadows the 'value' property on parent.
+// The child object now looks like:
+// { value: 4, __proto__: { value: 2, method: [Function] } }
+console.log(child.method()); // 5
+// Since child now has the 'value' property, 'this.value' means
+// child.value instead
+VM1068:8 3
+VM1068:15 3
+VM1068:26 5
+undefined
+const boxes = [
+  { value: 1, getValue() { return this.value; } },
+  { value: 2, getValue() { return this.value; } },
+  { value: 3, getValue() { return this.value; } },
+];
+undefined
+const boxPrototype = {
+  getValue() {
+    return this.value;
+  },
+};
+
+const boxes = [
+  { value: 1, __proto__: boxPrototype },
+  { value: 2, __proto__: boxPrototype },
+  { value: 3, __proto__: boxPrototype },
+];
+undefined
+// A constructor function
+function Box(value) {
+  this.value = value;
+}
+
+// Properties all boxes created from the Box() constructor
+// will have
+Box.prototype.getValue = function () {
+  return this.value;
+};
+
+const boxes = [new Box(1), new Box(2), new Box(3)];
+ƒ () {
+  return this.value;
+}
+class Box {
+  constructor(value) {
+    this.value = value;
+  }
+
+  // Methods are created on Box.prototype
+  getValue() {
+    return this.value;
+  }
+}
+VM1074:1 Uncaught SyntaxError: Identifier 'Box' has already been declared
+function Box(value) {
+  this.value = value;
+}
+Box.prototype.getValue = function () {
+  return this.value;
+};
+const box = new Box(1);
+
+// Mutate Box.prototype after an instance has already been created
+Box.prototype.getValue = function () {
+  return this.value + 1;
+};
+box.getValue(); // 2
+2
+function Box(value) {
+  this.value = value;
+}
+Box.prototype.getValue = function () {
+  return this.value;
+};
+const box = new Box(1);
+
+// Mutate Box.prototype after an instance has already been created
+Box.prototype.getValue = function () {
+  return this.value + 1;
+};
+box.getValue(); // 2
+
+const object = { a: 1 };
+Object.getPrototypeOf(object) === Object.prototype; // true
+
+// Array literals automatically have `Array.prototype` as their `[[Prototype]]`
+const array = [1, 2, 3];
+Object.getPrototypeOf(array) === Array.prototype; // true
+
+// RegExp literals automatically have `RegExp.prototype` as their `[[Prototype]]`
+const regexp = /abc/;
+Object.getPrototypeOf(regexp) === RegExp.prototype; // true
+true
+const array = new Array(1, 2, 3);
+const regexp = new RegExp("abc");
+undefined
+The service worker navigation preload request was cancelled before 'preloadResponse' settled. If you intend to use 'preloadResponse', use waitUntil() or respondWith() to wait for the promise to settle.
+Number.prototype + 1; // 1
+Array.prototype.map((x) => x + 1); // []
+String.prototype + "a"; // "a"
+RegExp.prototype.source; // "(?:)"
+Function.prototype(); // Function.prototype is a no-op function by itself
+undefined
+function Base() {}
+function Derived() {}
+// Set the `[[Prototype]]` of `Derived.prototype`
+// to `Base.prototype`
+Object.setPrototypeOf(Derived.prototype, Base.prototype);
+
+const obj = new Derived();
+// obj ---> Derived.prototype ---> Base.prototype ---> Object.prototype ---> null
+Base {constructor: ƒ}
+function doSomething() {}
+doSomething.prototype.foo = "bar";
+console.log(doSomething.prototype);
+VM1104:3 {foo: 'bar', constructor: ƒ}
+undefined
+function doSomething() {}
+doSomething.prototype.foo = "bar";
+const doSomeInstancing = new doSomething();
+doSomeInstancing.prop = "some value";
+console.log("doSomeInstancing.prop:     ", doSomeInstancing.prop);
+console.log("doSomeInstancing.foo:      ", doSomeInstancing.foo);
+console.log("doSomething.prop:          ", doSomething.prop);
+console.log("doSomething.foo:           ", doSomething.foo);
+console.log("doSomething.prototype.prop:", doSomething.prototype.prop);
+console.log("doSomething.prototype.foo: ", doSomething.prototype.foo);
+VM1105:5 doSomeInstancing.prop:      some value
+VM1105:6 doSomeInstancing.foo:       bar
+VM1105:7 doSomething.prop:           undefined
+VM1105:8 doSomething.foo:            undefined
+VM1105:9 doSomething.prototype.prop: undefined
+VM1105:10 doSomething.prototype.foo:  bar
