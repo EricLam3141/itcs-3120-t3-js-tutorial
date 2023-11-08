@@ -1,0 +1,181 @@
+const x = 1 + 2 * 3;
+const y = 2 * 3 + 1;
+VM425:1 Uncaught SyntaxError: Identifier 'x' has already been declared
+VM295 Script snippet #2:1 7
+VM295 Script snippet #2:1 7
+VM430 Script snippet #2:1 Uncaught SyntaxError: Identifier 'x' has already been declared (at VM430 Script snippet #2:1:1)
+const x = 1 + 2 * 3;
+const y = 2 * 3 + 1;
+VM432:1 Uncaught SyntaxError: Identifier 'x' has already been declared
+VM295 Script snippet #2:1 7
+const obj = {};
+
+obj.x = 3;
+console.log(obj.x); // Prints 3.
+console.log(obj); // Prints { x: 3 }.
+
+const key = "y";
+obj[key] = 5;
+console.log(obj[key]); // Prints 5.
+console.log(obj); // Prints { x: 3, y: 5 }.
+VM435:4 3
+VM435:5 {x: 3}
+VM435:9 5
+VM435:10 {x: 3, y: 5}
+undefined
+const val = 0;
+val.x = 3;
+
+console.log(val.x); // Prints undefined.
+console.log(val); // Prints 0.
+VM436:4 undefined
+VM436:5 0
+undefined
+const foo = ["one", "two", "three"];
+
+const one = foo[0];
+const two = foo[1];
+const three = foo[2];
+undefined
+const [one, two, three] = foo;
+undefined
+let x = f();
+
+x = g(); // Reassigns the variable x to the result of g().
+VM439:1 Uncaught TypeError: f is not a function
+    at <anonymous>:1:9
+(anonymous) @ VM439:1
+let x;
+const y = (x = f()); // Or equivalently: const y = x = f();
+console.log(y); // Logs the return value of the assignment x = f().
+
+console.log(x = f()); // Logs the return value directly.
+
+// An assignment expression can be nested in any place
+// where expressions are generally allowed,
+// such as array literals' elements or as function calls' arguments.
+console.log([0, x = f(), 0]);
+console.log(f(0, x = f(), 0));
+VM440:2 Uncaught TypeError: f is not a function
+    at <anonymous>:2:16
+(anonymous) @ VM440:2
+function f() {
+  console.log("F!");
+  return 2;
+}
+function g() {
+  console.log("G!");
+  return 3;
+}
+let x, y;
+VM441:1 Uncaught SyntaxError: Identifier 'y' has already been declared
+function f() {
+  console.log("F!");
+  return 2;
+}
+function g() {
+  console.log("G!");
+  return 3;
+}
+x, y;
+VM442:9 Uncaught ReferenceError: y is not defined
+    at <anonymous>:9:4
+(anonymous) @ VM442:9
+VM444 Script snippet #2:27 Uncaught SyntaxError: Identifier 'one' has already been declared (at VM444 Script snippet #2:27:8)
+function f() {
+  console.log("F!");
+  return 2;
+}
+function g() {
+  console.log("G!");
+  return 3;
+}
+x, 
+let y;
+VM446:10 Uncaught SyntaxError: Unexpected identifier 'y'
+y = x = f();
+y = [f(), x = g()];
+x[f()] = g();
+VM442:2 F!
+VM447:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:3
+(anonymous) @ VM447:1
+1 / 2; // 0.5
+1 / 2 === 1.0 / 2.0; // this is true
+true
+const a1 = true && true; // t && t returns true
+const a2 = true && false; // t && f returns false
+const a3 = false && true; // f && t returns false
+const a4 = false && 3 === 4; // f && f returns false
+const a5 = "Cat" && "Dog"; // t && t returns Dog
+const a6 = false && "Cat"; // f && t returns false
+const a7 = "Cat" && false; // t && f returns false
+undefined
+const x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+const a = [x, x, x, x, x];
+
+for (let i = 0, j = 9; i <= j; i++, j--) {
+  //                              ^
+  console.log(`a[${i}][${j}]= ${a[i][j]}`);
+}
+VM450:1 Uncaught SyntaxError: Identifier 'x' has already been declared
+
+ x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+ const a = [x, x, x, x, x];
+
+for (let i = 0, j = 9; i <= j; i++, j--) {
+  //                              ^
+  console.log(`a[${i}][${j}]= ${a[i][j]}`);
+}
+VM452:7 a[0][9]= 9
+VM452:7 a[1][8]= 8
+VM452:7 a[2][7]= 7
+VM452:7 a[3][6]= 6
+VM452:7 a[4][5]= 5
+undefined
+delete Math.PI; // returns false (cannot delete non-configurable properties)
+
+const myObj = { h: 4 };
+delete myObj.h; // returns true (can delete user-defined properties)
+true
+typeof Date; // returns "function"
+typeof Function; // returns "function"
+typeof Math; // returns "object"
+typeof Option; // returns "function"
+typeof String; // returns "function"
+'function'
+const trees = ["redwood", "bay", "cedar", "oak", "maple"];
+0 in trees; // returns true
+3 in trees; // returns true
+6 in trees; // returns false
+"bay" in trees; // returns false
+// (you must specify the index number, not the value at that index)
+"length" in trees; // returns true (length is an Array property)
+
+// built-in objects
+"PI" in Math; // returns true
+const myString = new String("coral");
+"length" in myString; // returns true
+
+// Custom objects
+const mycar = { make: "Honda", model: "Accord", year: 1998 };
+"make" in mycar; // returns true
+"model" in mycar; // returns true
+true
+const a = 1;
+const b = 2;
+const c = 3;
+
+// default precedence
+a + b * c     // 7
+// evaluated by default like this
+a + (b * c)   // 7
+
+// now overriding precedence
+// addition before multiplication
+(a + b) * c   // 9
+
+// which is equivalent to
+a * c + b * c // 9
+VM456:12 Uncaught TypeError: (b * c) is not a function
+    at <anonymous>:12:1
